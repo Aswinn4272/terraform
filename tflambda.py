@@ -5,8 +5,8 @@ def lambda_handler(event, context):
     # TODO implement
     s3 = boto3.resource('s3')
 
-    bucket = s3.Bucket('aswin-tf-test-bucket')
-    dest_bucket=s3.Bucket('aswin-2-bucket')
+    bucket = s3.Bucket('source_bucket_name')
+    dest_bucket=s3.Bucket('destination_bucket_name')
     
     print(dest_bucket)
     print(bucket)
