@@ -1,12 +1,12 @@
 provider "aws" {
   region = "ap-south-1"
-  access_key = access_key
-  secret_key = secret_key
+  access_key = your_access_key
+  secret_key = your_secret_key
 }
 
 #create s3 bucket
 resource "aws_s3_bucket" "example" {
-  bucket = "aswin-tf-test-bucket"
+  bucket = "bucket_name"
 
   tags = {
     Name        = "samble bucket"
